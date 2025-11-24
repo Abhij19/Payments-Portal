@@ -10,7 +10,6 @@ It interacts with the Spring Boot backend to allow users to **view, add, edit, a
 - Angular 17   
 - TypeScript  
 - Bootstrap  
-- Forms API (ngModel)  
 
 ---
 
