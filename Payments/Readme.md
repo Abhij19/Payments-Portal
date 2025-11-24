@@ -11,8 +11,6 @@ It manages payment creation, retrieval, updates, and deletion while ensuring **i
 - Spring Boot 3
 - Spring Data JPA (H2 in-memory DB)
 - Lombok
-- Spring Validation
-- Spring Cache
 - Resilience4j (Circuit Breaker)
 - Swagger / OpenAPI 3
 - JUnit 5 + Mockito
