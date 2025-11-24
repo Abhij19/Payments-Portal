@@ -1,0 +1,32 @@
+<div class="container mt-4">
+
+  <h2>{{ isEdit ? 'Edit Payment' : 'Create Payment' }}</h2>
+
+  <form (ngSubmit)="save()" class="mt-3">
+
+    <div class="mb-3">
+      <label>Amount</label>
+      <input type="number"
+             class="form-control"
+             [(ngModel)]="model.amount"
+             name="amount" required min="1">
+    </div>
+
+    <div class="mb-3">
+      <label>Currency</label>
+      <select class="form-control"
+              [(ngModel)]="model.currency"
+              name="currency">
+        <option>USD</option>
+        <option>EUR</option>
+        <option>INR</option>
+        <option>GBP</option>
+      </select>
+    </div>
+
+    <button class="btn btn-success">{{ isEdit ? 'Update' : 'Save' }}</button>
+    <a class="btn btn-secondary ms-2" routerLink="/">Cancel</a>
+  </form>
+
+</div>
+
